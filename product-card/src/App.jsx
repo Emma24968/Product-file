@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Product } from "./Product";
 import { Food } from "./Food";
+import { Sports } from "./Sports";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -41,6 +42,12 @@ function App() {
         price={30}
         available={0}
         category={["Rice", "Fries", "Bozanno pie", "Pork"]}
+      />
+      <Sports
+        title="Sports Department"
+        Price={50}
+        InStock={null}
+        Category={["Football", "Cricket", "Ruby", "Golf"]}
       />
     </>
   );
