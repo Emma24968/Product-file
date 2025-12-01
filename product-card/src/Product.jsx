@@ -1,3 +1,4 @@
+import { OrderButton } from "./OrderButton"
 export const Product = ({title, price, InStock,category})=>{
     return(
         <div>
@@ -5,6 +6,8 @@ export const Product = ({title, price, InStock,category})=>{
             <p>Price:${price}</p>
             <p>In Stock:{InStock? 'Yes': 'No'}</p>
             <p>Category:{category.join(' , ')}</p>
+                        <OrderButton />
+            
         </div>
     )
 }
