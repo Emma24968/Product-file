@@ -4,13 +4,14 @@ import { Product } from "./Product";
 import { Food } from "./Food";
 import { Sports } from "./Sports";
 import { Funiture } from "./Funiture";
+import { Header } from "./Header";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-
+<Header />
       <Product
         title="Clothing "
         price={1000}
